@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="AX 서비스 기획자 이정민의 포트폴리오">
 	<title>이정민 | AX 서비스 기획자</title>
-	<style>
+	<link rel="stylesheet" href="style.css">
+	<style media="not all">
 		@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap');
 
 		:root {
@@ -154,7 +155,7 @@
 	<header class="site-header">
 		<div class="wrap">
 			<a class="brand" href="#top">JM<span>.</span> PORTFOLIO</a>
-			<nav aria-label="주요 메뉴"><a href="index.html" aria-current="page">Portfolio</a><a href="keyword.html">Keywords</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+			<nav aria-label="주요 메뉴"><a href="#about">Profile</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#honors">Honors</a><a href="#talk">Talk</a><a href="#contact">Contact</a></nav>
 		</div>
 	</header>
 
@@ -182,6 +183,11 @@
 					<li class="stat"><span class="label">AWARDS</span><strong>10+</strong><p>수상 및 선정 경험</p></li>
 					<li class="stat"><span class="label">ROLE</span><strong>PO</strong><p>기획 · 분석 · 실행</p></li>
 				</ul>
+				<dl class="profile-details">
+					<div><dt>전공</dt><dd>성균관대학교 통계학과<br>글로컬문화콘텐츠연계전공 <span>(경제학사, 국문학사)</span><time datetime="2027-02">2027.02 졸업 예정</time></dd></div>
+					<div><dt>자격증</dt><dd>ADsP<br>ITQ OA Master <span>(인터넷 · 한글 · PPT)</span><br>아마추어무선통신 3급(전화)</dd></div>
+					<div><dt>취미</dt><dd>일본어 공부 · 음악 감상</dd></div>
+				</dl>
 				<ul class="capabilities" aria-label="핵심 역량">
 					<li class="capability"><span class="label">01 / DISCOVER</span><h3>현장·VOC 기반 문제 정의</h3><p>기업과 시장 취재, 사용자 인터뷰와 정성 조사를 통해 실제 Pain Point를 발견하고 UX 개선안으로 구체화합니다.</p></li>
 					<li class="capability"><span class="label">02 / VALIDATE</span><h3>데이터 기반 가설 검증</h3><p>100여 명 설문, 베타테스트, 시장 수요 조사로 가설을 검증하고 B2B/B2C 수익 구조와 지속 가능성을 설계합니다.</p></li>
@@ -189,14 +195,14 @@
 				</ul>
 			</section>
 
-			<section>
+			<section id="skills">
 				<header class="section-head"><h2>Skills</h2><p>기획의 처음부터 끝까지, 비즈니스와 기술 사이를 오갑니다.</p></header>
 				<ul class="skills" aria-label="보유 기술 및 역량"><li class="skill">서비스 기획</li><li class="skill">Product Owner (PO)</li><li class="skill">AI Transformation (AX)</li><li class="skill">생성형 AI</li><li class="skill">Prompt Engineering</li><li class="skill">BM 기획</li><li class="skill">MVP 구축</li><li class="skill">가설 검증</li><li class="skill">UX Research / VOC</li></ul>
 			</section>
 
 			<section id="experience">
 				<header class="section-head"><h2>Experience</h2><p>아이디어를 실체화하고, 결과로 검증한 프로젝트 기록입니다.</p></header>
-				<div class="filters" role="group" aria-label="경험 필터"><button class="filter active" data-filter="all">전체</button><button class="filter" data-filter="ai">AI / AX</button><button class="filter" data-filter="startup">창업 / BM</button><button class="filter" data-filter="leadership">리더십 / 커뮤니케이션</button></div>
+				<div class="filters" role="group" aria-label="경험 필터"><button class="filter active" data-filter="all" aria-pressed="true">전체</button><button class="filter" data-filter="ai" aria-pressed="false">AI / AX</button><button class="filter" data-filter="startup" aria-pressed="false">창업 / BM</button><button class="filter" data-filter="leadership" aria-pressed="false">리더십 / 커뮤니케이션</button></div>
 				<section class="timeline" aria-label="주요 경력 및 프로젝트">
 					<article class="experience" data-category="ai"><time class="date">2026.08<br>~ 2026.12</time><div class="experience-card"><h3>우리WON 청년 IT 아카데미</h3><p class="context">고용노동부 · 우리금융그룹 주관</p><div class="detail-grid"><p class="detail"><b>ROLE & ACTIVITY</b>금융 AX 프로세스와 AI 기반 코딩, 금융 도메인 풀스택 개발 프로세스 이수. 금융 비즈니스 문제 해결 서비스 및 AX 해커톤 참여.</p><p class="detail"><b>OUTCOME & FIT</b><strong>교육 과정 이수 및 프로젝트 완수.</strong> IT·AI 메커니즘을 비즈니스 현장에 접목하는 기술 이해도 기반 상품기획 역량 확보.</p></div></div></article>
 					<article class="experience" data-category="ai"><time class="date">2026.08</time><div class="experience-card"><h3>업스테이지 MABC 2026 서포터즈</h3><p class="context">AI 스킬 기획 · 개발 · 콘텐츠</p><div class="detail-grid"><p class="detail"><b>ROLE & ACTIVITY</b>리서치 요약, 메일 초안, 데이터 정리 등 반복 업무 유즈케이스를 정의하고 맞춤형 AI 스킬 3개 개발. 가치와 사용법을 알리는 콘텐츠 제작.</p><p class="detail"><b>OUTCOME & FIT</b><strong>3주간 AI 스킬 3개, 홍보 콘텐츠 3건 완수.</strong> 사용자 니즈 분석부터 AI 에이전트 기획, 브랜딩까지 연결.</p></div></div></article>
@@ -217,10 +223,10 @@
 				</section>
 			</section>
 
-			<section>
+			<section id="honors">
 				<div class="bottom-grid">
-					<article><header class="section-head"><h2>Honors</h2></header><ul class="award-list"><li><time>2026</time><span>RISE Rise Crew 2기 말레이시아 IR 투어 대상팀</span></li><li><time>2026</time><span>퀀텀 리프레이밍 챌린지 우수상(한국양자융합센터장상)</span></li><li><time>2026</time><span>AI-VIBE 부트캠프 최우수상(1위)</span></li><li><time>2026</time><span>코스닥협회 우수기자상</span></li><li><time>2025</time><span>창업아이디어 ON 금상(2위)</span></li><li><time>2025</time><span>AI융합 산학연계 해커톤 대상(1위)</span></li><li><time>2022</time><span>서울교통공사 또타 서포터즈 최우수상</span></li><li><time>2019</time><span>대한민국 창의력 챔피언대회 경기도 2위(전국 4위)</span></li></ul></article>
-					<article><header class="section-head"><h2>Talk</h2></header><div class="paper"><span class="label">ACADEMIC PRESENTATION · 2025</span><h3>한국스마트미디어학회<br>추계학술대회 공식 초청 발표</h3><p>전남대학교 AI 융합 문제발굴 산학연계 해커톤 수상작의 서비스 구조와 AI 개발 과정을 주제로 발표했습니다.</p></div></article>
+					<article><header class="section-head"><h2>Honors</h2></header><ul class="award-list"><li><time>2026</time><span>RISE Rise Crew 2기 말레이시아 IR 투어 대상팀</span></li><li><time>2026</time><span>퀀텀 리프레이밍 챌린지 우수상(한국양자융합센터장상)</span></li><li><time>2026</time><span>AI-VIBE 부트캠프 최우수상(1위)</span></li><li><time>2026</time><span>코스닥협회 우수기자상</span></li><li><time>2025</time><span>창업아이디어 ON 금상(2위)</span></li><li><time>2025</time><span>AI융합 산학연계 해커톤 대상(1위)</span></li><li><time>2022</time><span>서울교통공사 또타 서포터즈 최우수상</span></li><li><time>2015</time><span>대한민국 창의력 챔피언대회 경기도 2위(전국 4위)</span></li></ul></article>
+					<article id="talk"><header class="section-head"><h2>Talk</h2></header><div class="paper"><span class="label">ACADEMIC PRESENTATION · 2025</span><h3>한국스마트미디어학회<br>추계학술대회 공식 초청 발표</h3><p>전남대학교 AI 융합 문제발굴 산학연계 해커톤 수상작의 서비스 구조와 AI 개발 과정을 주제로 발표했습니다.</p></div></article>
 				</div>
 			</section>
 	</main>
@@ -229,16 +235,35 @@
 	<script>
 		const filters = document.querySelectorAll('.filter');
 		const experiences = document.querySelectorAll('.experience');
+		const categoryTitles = {
+			ai: ['우리WON 청년 IT 아카데미', '업스테이지 MABC 2026 서포터즈', '창업아이디어 ON · ‘래미 AI’', 'AI-VIBE 부트캠프 · ‘TUTOLOG’', 'AI융합 산학연계 해커톤 · ‘무대뽀’'],
+			startup: ['성균관대 RISE Rise Crew 2기 창업 프로젝트', '창업아이디어 ON · ‘래미 AI’', 'AI-VIBE 부트캠프 · ‘TUTOLOG’', 'AI융합 산학연계 해커톤 · ‘무대뽀’', '성균관대 SeTA 18기 주니어코치', '융합기초프로젝트', '성균관대 SeTA 17기 팀 리더', '잘나가게 골목경제 부활 프로젝트'],
+			leadership: ['업스테이지 MABC 2026 서포터즈', '퀀텀 리프레이밍 챌린지 2026', '성균관대 RISE Rise Crew 2기 창업 프로젝트', '창업아이디어 ON · ‘래미 AI’', 'AI-VIBE 부트캠프 · ‘TUTOLOG’', 'AI융합 산학연계 해커톤 · ‘무대뽀’', '성균관대 SeTA 18기 주니어코치', '융합기초프로젝트', '코스닥협회 제3기 기자단장', '성균관대 SeTA 17기 팀 리더', '성균관대 국궁부 ‘청금’ 부회장', '잘나가게 골목경제 부활 프로젝트', '서울교통공사 또타 서포터즈 6기', '영마인드 서포터즈 3기', '경기도교육지원청 발명특기생']
+		};
+		experiences.forEach((experience) => {
+			const title = experience.querySelector('h3').textContent;
+			experience.dataset.category = Object.entries(categoryTitles)
+				.filter(([, titles]) => titles.includes(title))
+				.map(([category]) => category)
+				.join(' ');
+		});
 		filters.forEach((filter) => {
 			filter.addEventListener('click', () => {
-				filters.forEach((item) => item.classList.remove('active'));
+						filters.forEach((item) => {
+							item.classList.remove('active');
+							item.setAttribute('aria-pressed', 'false');
+						});
 				filter.classList.add('active');
+						filter.setAttribute('aria-pressed', 'true');
 				const category = filter.dataset.filter;
 				experiences.forEach((experience) => {
-					experience.hidden = category !== 'all' && experience.dataset.category !== category;
+						const shouldHide = category !== 'all' && !experience.dataset.category.split(' ').includes(category);
+						experience.hidden = shouldHide;
+						experience.classList.toggle('is-hidden', shouldHide);
 				});
 			});
 		});
 	</script>
 </body>
 </html>
+
