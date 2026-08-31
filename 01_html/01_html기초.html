@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 연습</title>
+</head>
+<body>
+    안녕하세요<br />
+    저는
+    이
+    정
+    민
+    입니다.
+    <!-- 주석은 눈에 보이지 않습니다 -->
+     <!-- 들여쓰기 SHIFT+TAB 누르시면 하나 앞으로 끌어오고,
+      TAB 누르시면 바깥으로 하나 밀려납니다. -->
+    <h1>제목1</h1>
+    <h2>제목2</h2>
+        <h3>제목3</h3>
+                <h4>제목4</h4>
+                    <h5>제목5</h5> 
+                    <h6>제목6</h6>
+            <!-- 에러가 있어도 무시합니다. h1~h6까지는 제목을 나타내는 태그입니다. 숫자가 작을수록 글씨가 커집니다. -->
+        제목 6그냥 글씨
+
+    <!-- 리스트: 부모/자식 태그를 함께 사용. 
+     Unordered/Ordered -->
+     <ul>
+         <li>사과</li>
+         <li>짜장면</li>
+         <li>마라탕</li>
+     </ul>
+순서리스트
+     <ol>
+         <li>사과</li>
+         <li>짜장면</li>
+         <li>마라탕</li>
+         <li>초밥 </li>
+     </ol>
+
+
+<!--표를 만들어보자-->
+ <table border="3">
+    <!--행-->
+    <tr> <--table row(행)-->
+        <td>
+ <!--table data(칸)-->            1번사람</td>>
+        <td>이정민</td>
+        <td>만 25세</td>
+    </tr>
+    <tr>
+        <td>2번사람</td>
+        <td>신짱구</td>
+        <td>만 3세</td>
+    </tr>
+
+    <tr>
+        <td>3번사람</td>
+        <td>김철수</td>
+        <td>만 30세</td>
+    </tr>
+ </table>
+
+
+
+ <!-- a(anchor) 태그를 사용해서 다른 문서와 연결해줍니다-->
+  <!--태그에 특정한 기능을 부여하기 위해 속성(attribute)를 함께 사용하기도 합니다-->
+  <a href="00_emmet.html">00으로 넘어가기</a>
+
+
+  <!--네이버로 가기라는 내용에 naver.com으로 넘어가기 추가-->
+  <a href="https://www.naver.com" target="_blank">네이버로 가기</a>
+  <!--네이버로 넘어가더라도 원래 내 홈페이지로 돌아가게 하려면 탭을 새로 생성해서 내 탭은 그대로 남아있게 해주는게 좋습니다. 그래서 target="_blank" 속성을 사용합니다-->
+ <!--이미지는 어떻게 첨부할까요-->
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="나무사진" width="300px" height="200px">
+    <!--이미지 태그는 src 속성으로 이미지 경로를 지정하고, alt 속성으로 이미지가 없을 때 대체할 텍스트를 지정합니다. width와 height 속성으로 이미지 크기를 조절할 수 있습니다.-->
+ <img src="./data/jjanggu.png" />
+ <!--개발은 로컬에서 하지만 서버는 현재 프로젝트부터 올리기 때문에 
+ 경로는 상대경로복사를 통해 현재 파일 기준으로 해당 위치가 어딘지 해야해요.
+ 윈도우는 \,웹은/를 사용해서 구분합니다.-->
+ <!-- .을 쓰거나 안쓰거나 결과는 같지만 하나의 기준점을 찍어준다고 생각하면 될 것 같아용 -->
+  <!-- .은 지금이고 ..은 한단계 위라는 것입니다-->
+   <!-- <img src="../01_html/data/jjanggu.png" > -->
+
+<!--한줄씩 선택하고 ctrl+/(슬래시)를 하면 주석이 자동으로 만들어집니다-->
+
+   <!--밑에다 monster.png 넣을 것인데, 이미지 파일 크기가 크니 
+   mdn에서 이미지 크기를 조절하는 법을 찾아 넣어봅시다-->
+   <img src="./data/monster.png" alt="몬스터사진" width="300px"/>
+
+
+
+   <!--p:paragraph로 문단을 구분합니다-->
+   <p>Lorem ipsum dolor <strong>sit amet</strong> consectetur adipisicing elit. Quisquam, quod.</p>
+   <p>Lorem <em>ipsum</em> dolor <b>sit amet</b> consectetur</p>
+   <!--b:화면에 진하게 보이기. strong: 의미상도 함께 강조하기, em: 기울인 이탤릭체-->
+   <!--정보 전달을 잘해서 검색어 우선순위에 들어감-->
+   <!--웹 접근성을 고려한 태그들을 활용하시는 걸 권장-->
+
+   <p></p>
+ </body>
+ </html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="AX 서비스 기획자 이정민을 설명하는 세 가지 키워드">
+	<title>Keywords | 이정민</title>
+	<link rel="stylesheet" href="style.css">
+	<style media="not all">
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			min-height: 100vh;
+			background: #f5f3ee;
+			color: #17221d;
+			font-family: "Noto Sans KR", sans-serif;
+			line-height: 1.7;
+		}
+		a { color: inherit; text-decoration: none; }
+		.wrap { width: min(1180px, calc(100% - 48px)); margin: 0 auto; }
+		header.site-header { padding: 26px 0 18px; border-bottom: 1px solid #d9ded7; }
+		.site-header .wrap { display: flex; justify-content: space-between; align-items: center; }
+		.brand { font: 800 17px Manrope, sans-serif; letter-spacing: -.04em; }
+		.brand span { color: #e86d4e; }
+		nav { display: flex; gap: 24px; color: #68746d; font-size: 13px; font-weight: 600; }
+		nav a:hover, nav a[aria-current="page"] { color: #e86d4e; }
+		main { width: min(1180px, calc(100% - 48px)); margin: 0 auto; padding: 92px 0 110px; }
+		main > header { max-width: 720px; margin-bottom: 42px; }
+		.eyebrow { margin: 0 0 15px; color: #24735a; font: 500 11px "DM Mono", monospace; letter-spacing: .08em; }
+		h1 { margin: 0 0 14px; font: 800 clamp(40px, 6vw, 72px)/1.15 Manrope, "Noto Sans KR", sans-serif; letter-spacing: -.07em; }
+		.intro { max-width: 550px; margin: 0; color: #68746d; font-size: 16px; }
+		.keyword-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 0; padding: 0; list-style: none; }
+		.keyword {
+			padding: 30px 25px;
+			min-height: 245px;
+			border-top: 4px solid #24735a;
+			background: #fffdf8;
+		}
+		.keyword:nth-child(2) { border-color: #e86d4e; background: #c7ead9; }
+		.keyword:nth-child(3) { border-color: #c3a52c; background: #f2d66b; }
+		.number { color: #24735a; font: 500 11px "DM Mono", monospace; letter-spacing: .08em; }
+		h2 { margin: 24px 0 18px; font-size: 19px; letter-spacing: -.04em; }
+		.answer {
+			margin: 0;
+			color: #17221d;
+			font-size: 22px;
+			font-weight: 700;
+		}
+		footer { padding: 30px 0; background: #17221d; color: #c7ead9; font: 11px "DM Mono", monospace; }
+		@media (max-width: 700px) {
+			.wrap, main { width: min(100% - 32px, 580px); }
+			header.site-header { padding-top: 18px; }
+			nav { gap: 12px; font-size: 11px; }
+			nav a:nth-child(3), nav a:nth-child(4) { display: none; }
+			main { padding: 65px 0 75px; }
+			.keyword-list { grid-template-columns: 1fr; }
+			.keyword { min-height: 160px; }
+		}
+	</style>
+</head>
+<body>
+	<header class="site-header">
+		<div class="wrap">
+			<a class="brand" href="index.html">JM<span>.</span> PORTFOLIO</a>
+			<nav aria-label="주요 메뉴">
+				<a href="index.html#about">Profile</a>
+				<a href="index.html#skills">Skills</a>
+				<a href="index.html#experience">Experience</a>
+				<a href="index.html#honors">Honors</a>
+				<a href="index.html#talk">Talk</a>
+				<a href="keyword.html" aria-current="page">Keyword</a>
+				<a href="index.html#contact">Contact</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<header>
+			<p class="eyebrow">PERSONALITY · PERSPECTIVE · PRACTICE</p>
+			<h1>나를 설명하는<br>세 가지 키워드</h1>
+			<p class="intro">서비스를 기획하는 사람의 관찰과 취향을 짧게 소개합니다.</p>
+		</header>
+		<section aria-labelledby="keyword-heading">
+			<h2 id="keyword-heading" hidden>이정민의 키워드</h2>
+			<ul class="keyword-list">
+				<li class="keyword">
+				<span class="number">문항 1</span>
+				<h2>내가 즐겨보는 콘텐츠는?</h2>
+				<p class="answer">유튜버 진돌·명탐정 코난</p>
+				</li>
+				<li class="keyword">
+				<span class="number">문항 2</span>
+				<h2>나의 취미는?</h2>
+				<p class="answer">음악 감상 (독일 Rock Band Scorpions)</p>
+				</li>
+				<li class="keyword">
+				<span class="number">문항 3</span>
+				<h2>외출할 때 가방에 꼭 챙기는 물품은?</h2>
+				<p class="answer">맥가이버 칼, 거울, 핸드폰, 무선이어폰, 상비약, 휴지, 물, 우양산, 거울, 립밤, 머리끈, 아로마롤</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<footer><p class="wrap">LEE JEONGMIN · AX SERVICE PLANNER · 2026</p></footer>
+</body>
+</html>
